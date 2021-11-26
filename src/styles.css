@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  height: 100vh;
+  background: #18161e;
+}
+
+:root {
+  --main-bg-color: #18161e;
+  --secondary-bg-color: whitesmoke;
+  --main-text-color: #18161e;
+  --secondary-text-color: whitesmoke;
+}
+
+.main-color {
+  color: var(--main-text-color);
+}
+.secondary-color {
+  color: var(--secondary-text-color);
+}
