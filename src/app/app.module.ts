@@ -9,6 +9,15 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TitleComponent } from './components/title/title.component';
 import { SubtitleComponent } from './components/subtitle/subtitle.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { HomeComponent } from './views/home/home.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: 'trajectory', component: FooterComponent },
+  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', component: HomeComponent },
+];
 
 @NgModule({
   declarations: [
@@ -18,13 +27,11 @@ import { BannerComponent } from './components/banner/banner.component';
     FooterComponent,
     TitleComponent,
     SubtitleComponent,
-    BannerComponent
+    BannerComponent,
+    HomeComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

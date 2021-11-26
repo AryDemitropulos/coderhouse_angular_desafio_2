@@ -1,0 +1,18 @@
+.section {
+  padding: 50px;
+  background: var(--secondary-bg-color);
+  margin-bottom: 50px;
+}
+.paragraph {
+  padding: 50px;
+  font-style: italic;
+  text-align: justify;
+}
+
+img {
+  width: inherit;
+  max-width: 300px;
+  display: flex;
+  margin: auto;
+  border-radius: 50%;
+}
