@@ -1,5 +1,5 @@
-export interface Brand {
-  name: String;
+export interface Comment {
+  author: String;
   img: String;
   comment: String;
 }

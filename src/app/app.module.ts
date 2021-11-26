@@ -13,6 +13,8 @@ import { HomeComponent } from './views/home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { TrajectoryComponent } from './views/trajectory/trajectory.component';
 import { SectionComponent } from './components/section/section.component';
+import { BrandComponent } from './components/brand/brand.component';
+import { CommentComponent } from './components/comment/comment.component';
 
 const appRoutes: Routes = [
   { path: 'trajectory', component: TrajectoryComponent },
@@ -33,6 +35,8 @@ const appRoutes: Routes = [
     HomeComponent,
     TrajectoryComponent,
     SectionComponent,
+    BrandComponent,
+    CommentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],

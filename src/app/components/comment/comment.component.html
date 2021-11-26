@@ -1,0 +1,19 @@
+<div class="col-12 row mb-5 mt-5 pt-5 pb-5 comment-container">
+  <div
+    class="col-12 col-md-4"
+    [ngClass]="index % 2 != 0 ? 'order-md-2' : 'order-md-1'"
+  >
+    <img src="/assets/comments/{{ img }}" alt="" />
+  </div>
+  <div
+    class="col-12 col-md-8 p-4"
+    [ngClass]="index % 2 != 0 ? 'order-md-1' : 'order-md-2'"
+  >
+    <h4 class="comment">
+      <q>
+        {{ comment }}
+      </q>
+    </h4>
+    <h6 class="text-muted text-end"><span>-</span>{{ author }}</h6>
+  </div>
+</div>

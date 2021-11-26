@@ -1,9 +1,27 @@
 <app-section>
   <app-title text="Some of the companies that I have worked"></app-title>
-  <div>
-    <div class="brand-container">
-      <img src="/assets/img/happy_guy.png" alt="" />
-      <h4 class="main-color text-center">MARCA</h4>
+  <div class="row">
+    <div
+      class="col-12 col-md-4 col-lg-3"
+      *ngFor="let brand of brands; let i = index"
+    >
+      <app-brand [name]="brand.name" [img]="brand.img"></app-brand>
+    </div>
+  </div>
+</app-section>
+
+<app-section>
+  <app-title
+    text="See what some of the people that I've worked with think about me"
+  ></app-title>
+  <div class="row">
+    <div class="col-12" *ngFor="let comment of comments; let i = index">
+      <app-comment
+        [author]="comment.author"
+        [comment]="comment.comment"
+        [img]="comment.img"
+        [index]="i"
+      ></app-comment>
     </div>
   </div>
 </app-section>
