@@ -11,9 +11,11 @@ import { SubtitleComponent } from './components/subtitle/subtitle.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { HomeComponent } from './views/home/home.component';
 import { Routes, RouterModule } from '@angular/router';
+import { TrajectoryComponent } from './views/trajectory/trajectory.component';
+import { SectionComponent } from './components/section/section.component';
 
 const appRoutes: Routes = [
-  { path: 'trajectory', component: FooterComponent },
+  { path: 'trajectory', component: TrajectoryComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: HomeComponent },
@@ -29,6 +31,8 @@ const appRoutes: Routes = [
     SubtitleComponent,
     BannerComponent,
     HomeComponent,
+    TrajectoryComponent,
+    SectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(appRoutes)],
   providers: [],

@@ -1,4 +1,4 @@
-<div class="container section">
+<app-section>
   <app-title text="About me" subtitle="Short description"></app-title>
   <img src="/assets/img/happy_guy.png" alt="Random guy" />
   <app-subtitle text="Random Guy"></app-subtitle>
@@ -16,12 +16,11 @@
     quidem fugiat unde quisquam accusantium? Ad nihil cum sit, vitae accusamus
     rem rerum adipisci enim.
   </div>
-</div>
-<hr />
+</app-section>
 
-<div class="container section">
+<app-section>
   <app-title
-    text="Intereted on hiring?"
+    text="Intereted on hiring me?"
     subtitle="See all my trajectory!"
   ></app-title>
   <div class="row mt-5">
@@ -33,7 +32,9 @@
         If you are interested in seeing my trajectory or if you want to know
         more about me, check out all the projects that I've been worked
       </div>
-      <button class="btn btn-primary mt-4">Go see my projects!</button>
+      <button class="btn btn-primary mt-4" routerLink="/trajectory">
+        Go see my projects!
+      </button>
     </div>
   </div>
-</div>
+</app-section>
